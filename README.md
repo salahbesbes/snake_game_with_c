@@ -27,7 +27,7 @@ Project is created with:
 
 # install On Windows
 
-## Requirement onwindow
+## Requirement
 
 
 |MinGw|[download](https://sourceforge.net/projects/mingw/)|
@@ -79,4 +79,5 @@ Project is created with:
 
 
 
-Licence [SDL_gfx](https://sourceforge.net/projects/sdl2gfx/)
+# Licence
+not yet licenced, [SDL_gfx](https://sourceforge.net/projects/sdl2gfx/) maybe  is needed in other SDL2 Projects 

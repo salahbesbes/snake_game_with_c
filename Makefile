@@ -9,13 +9,13 @@ CFLAGS := `sdl2-config --libs --cflags` -ggdb3 -O0 --std=c99  -Wall
 HDRS := ./header.h
 LIBS = -L/usr/local/lib -lSDL2 -lm -lSDL2_image
 # add source files here
-SRCS := ./newmain.c ./init.c ./renderGame.c ./logicGame.c
+SRCS := ./main.c ./init.c ./renderGame.c ./logicGame.c
 
 # generate names of object files
 OBJS := $(SRCS:.c=.o)
 
 # name of executable
-EXEC := ./a.out
+EXEC := main
 
 # default recipe
 all: $(EXEC)

@@ -1,44 +1,82 @@
-# Snake game with pure C
+# Snake game with SDL2 (C language)
+My first Game made
 
-## Table of contents
+# Motivation
 
-- [General info](#general-info)
-- [Technologies](#technologies)
-- [Setup](#setup)
+This project is simple snake game made by SDL2. this is my very first own Game made, in this project i have learned the way game works, the logic behind any game, and how to build a game from scratch, in fact it's very funny project and I enjoy it.
 
-## General info
 
-This project is simple snake game made by pure C .
-i'm still buiding it
-i used makefile to make life easier
-
-## Technologies
+# Technologies
 
 Project is created with:
 
-- SDL2
+- SDL2 (with C)
+- Makefile
 
-## Setup
+# Feachers
+- I have fun learning how To Create Makefile
+- I found it realy hard to debug this game using VSCode Debugger, but My best friend is `Printf()`
 
-To run this project , u have to install SDL2 ( on linux )
+# ScreenShots
 
-    they are the same to install :
-    * dowload -> extact -> cd to folder
-    * ./configure
-    * make all
-    * sudo make install
-    * then in the make file add this to the flags u are compiling with :
-    	-L/usr/local/lib -lSDL2 -lm -lSDL2_image  -lSDL2_gfx
-    ( jsut use my make file with $ make)
+|<image src="screenShot1.PNG" />|<image src="screenShot2.PNG" />|
+|--|--|
 
-## to clone repo
+<br>
+<br>
+
+# install On Windows
+
+## Requirement onwindow
+
+
+|MinGw|[download](https://sourceforge.net/projects/mingw/)|
+|--|--|
+|gcc| <image src="mingw.PNG"  />|
+
+
+## Clone repo
 
     git clone https://github.com/salahbesbes/XO_game_with_c
+## Compile Game
 
-## How to use it
+     gcc -Isrc/Include -Lsrc/lib -o main ./*.c -lmingw32 -lSDL2main -lSDL2 -lSDL2_image
+## Run Game
+     ./main.exe
 
-    * compile it with :
-    make
-    * execute:
-    ./a.out
-    * enjoy :)
+
+# install On Ubuntu
+
+ ## Requirement
+  |||
+  |--|--|
+  |compiler | gcc |
+  | engine | [SDL2](https://www.libsdl.org/release/SDL2-2.0.20.zip) + [SDL2_image](https://www.libsdl.org/projects/SDL_image/release/SDL2_image-2.0.5.zip) | 
+
+  ## Install GCC
+    sudo apt update -y
+    sudo apt install unzip -y
+    sudo apt install build-essential -y
+ ## Install [SDL2](https://www.libsdl.org/download-2.0.php).zip
+    unzip filename.zip -d ~
+    ​cd ~/SDL2-folder
+    ​./configure
+    ​make all
+    ​sudo make install
+ ## Install [SDL2_image](https://www.libsdl.org/projects/SDL_image/).zip
+    unzip filename.zip -d ~
+    ​cd ~/SDL2_image-folder
+    ​./configure
+    ​make all
+    ​sudo make install
+    
+## Clone repo
+    git clone https://github.com/salahbesbes/snake_game_with_c.git
+## Compile Game
+     make 
+## Run Game
+    ./main
+
+
+
+Licence [SDL_gfx](https://sourceforge.net/projects/sdl2gfx/)

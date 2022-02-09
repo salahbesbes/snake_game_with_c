@@ -25,22 +25,32 @@ Project is created with:
 <br>
 <br>
 
-# install On Windows
+# Install On Windows
 
 ## Requirement
 
 
-|MinGw|[download](https://sourceforge.net/projects/mingw/)|
+* Install [MinGw](https://sourceforge.net/projects/mingw/)
+
+
+|||
 |--|--|
-|gcc| <image src="mingw.PNG"  />|
+|Install GCC| <image src="mingw.PNG"  />|
+<hr>
+
+* Add GCC to Windows PATH Variables:
+
+    * type "variable" in the windows search bar
+    * add the gcc path "C:\MinGW\bin" to the Windows Variable
+     <image src="PATH.PNG"  />
 
 
 ## Clone repo
 
-    git clone https://github.com/salahbesbes/XO_game_with_c
+    git clone https://github.com/salahbesbes/snake_game_with_c.git
 ## Compile Game
-
-     gcc -Isrc/Include -Lsrc/lib -o main ./*.c -lmingw32 -lSDL2main -lSDL2 -lSDL2_image
+    cd snake_game_with_c
+    gcc -Isrc/Include -Lsrc/lib -o main ./*.c -lmingw32 -lSDL2main -lSDL2 -lSDL2_image
 ## Run Game
      ./main.exe
 
